@@ -6,8 +6,8 @@ Stuff that I find useful, eh mate?
 
 ```ml
 arrays
-├─ ArrayUtils — Useful array ops.
 ├─ ArrayGibber — Create up to 10-length dynamic memory arrays via parameter passing.
+├─ ArrayUtils — Useful array ops.
 ├─ InPlaceArrayUtils — In-place operations on memory arrays.
 
 ```
