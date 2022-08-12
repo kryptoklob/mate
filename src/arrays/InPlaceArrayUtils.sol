@@ -3,7 +3,7 @@ pragma solidity >=0.8.0;
 
 /// @notice Array utilities that could be useful. Operates on arrays IN-PLACE.
 /// @dev This can certainly be done in assembly much more efficiently.
-/// @author Kryptoklob (https://github.com/kryptoklob/mate/blob/main/src/arrays/ArrayUtils.sol)
+/// @author Kryptoklob (https://github.com/kryptoklob/mate/blob/main/src/arrays/InPlaceArrayUtils.sol)
 library InPlaceArrayUtils {
     // Transforms each element in a supplied array with the supplied function
     function map(address[] memory self, function(address) pure returns (address) transform) internal pure {
