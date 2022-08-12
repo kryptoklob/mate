@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 pragma solidity >=0.8.0;
 
-/// @notice Overloaded lib for creating dyanmic memory arrays of types uint, address, and bool
+/// @notice Overloaded lib for creating dynamic memory arrays of types uint, address, and bool
 /// @dev This can certainly be done in assembly much more efficiently.
 /// @author Kryptoklob (https://github.com/kryptoklob/mate/blob/main/src/arrays/ArrayGibber.sol)
 library ArrayGibber {
