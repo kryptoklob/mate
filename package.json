@@ -1,14 +1,14 @@
 {
-  "name": "solmate",
+  "name": "mate",
   "license": "AGPL-3.0-only",
   "version": "6.5.0",
-  "description": "Modern, opinionated and gas optimized building blocks for smart contract development.",
+  "description": "Some solidity libs eh, mate?",
   "files": [
     "src/**/*.sol"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/transmissions11/solmate.git"
+    "url": "git+https://github.com/kryptoklob/mate.git"
   },
   "devDependencies": {
     "prettier": "^2.3.1",
