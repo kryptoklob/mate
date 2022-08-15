@@ -15,13 +15,13 @@ library ArrayGibber {
         return emptyArray;
     }
 
-	function gib(uint256 x0) public pure returns (uint256[] memory array) {
+	function gib(uint256 x0) internal pure returns (uint256[] memory array) {
 		array = new uint256[](1);
 
 		array[0] = x0;
 	}
 
-	function gib(uint256 x0, uint256 x1) public pure returns (uint256[] memory array) {
+	function gib(uint256 x0, uint256 x1) internal pure returns (uint256[] memory array) {
 		array = new uint256[](2);
 
 		array[0] = x0;
@@ -32,7 +32,7 @@ library ArrayGibber {
 		uint256 x0,
 		uint256 x1,
 		uint256 x2
-	) public pure returns (uint256[] memory array) {
+	) internal pure returns (uint256[] memory array) {
 		array = new uint256[](3);
 
 		array[0] = x0;
@@ -45,7 +45,7 @@ library ArrayGibber {
 		uint256 x1,
 		uint256 x2,
 		uint256 x3
-	) public pure returns (uint256[] memory array) {
+	) internal pure returns (uint256[] memory array) {
 		array = new uint256[](4);
 
 		array[0] = x0;
@@ -60,7 +60,7 @@ library ArrayGibber {
 		uint256 x2,
 		uint256 x3,
 		uint256 x4
-	) public pure returns (uint256[] memory array) {
+	) internal pure returns (uint256[] memory array) {
 		array = new uint256[](5);
 
 		array[0] = x0;
@@ -69,7 +69,7 @@ library ArrayGibber {
 		array[3] = x3;
 		array[4] = x4;
 	}
-
+`
 	function gib(
 		uint256 x0,
 		uint256 x1,
@@ -77,7 +77,7 @@ library ArrayGibber {
 		uint256 x3,
 		uint256 x4,
 		uint256 x5
-	) public pure returns (uint256[] memory array) {
+	) internal pure returns (uint256[] memory array) {
 		array = new uint256[](6);
 
 		array[0] = x0;
@@ -96,7 +96,7 @@ library ArrayGibber {
 		uint256 x4,
 		uint256 x5,
 		uint256 x6
-	) public pure returns (uint256[] memory array) {
+	) internal pure returns (uint256[] memory array) {
 		array = new uint256[](7);
 
 		array[0] = x0;
@@ -117,7 +117,7 @@ library ArrayGibber {
 		uint256 x5,
 		uint256 x6,
 		uint256 x7
-	) public pure returns (uint256[] memory array) {
+	) internal pure returns (uint256[] memory array) {
 		array = new uint256[](8);
 
 		array[0] = x0;
@@ -140,7 +140,7 @@ library ArrayGibber {
 		uint256 x6,
 		uint256 x7,
 		uint256 x8
-	) public pure returns (uint256[] memory array) {
+	) internal pure returns (uint256[] memory array) {
 		array = new uint256[](9);
 
 		array[0] = x0;
@@ -165,7 +165,7 @@ library ArrayGibber {
 		uint256 x7,
 		uint256 x8,
 		uint256 x9
-	) public pure returns (uint256[] memory array) {
+	) internal pure returns (uint256[] memory array) {
 		array = new uint256[](10);
 
 		array[0] = x0;
@@ -180,13 +180,13 @@ library ArrayGibber {
 		array[9] = x9;
 	}
 
-	function gib(address x0) public pure returns (address[] memory array) {
+	function gib(address x0) internal pure returns (address[] memory array) {
 		array = new address[](1);
 
 		array[0] = x0;
 	}
 
-	function gib(address x0, address x1) public pure returns (address[] memory array) {
+	function gib(address x0, address x1) internal pure returns (address[] memory array) {
 		array = new address[](2);
 
 		array[0] = x0;
@@ -197,7 +197,7 @@ library ArrayGibber {
 		address x0,
 		address x1,
 		address x2
-	) public pure returns (address[] memory array) {
+	) internal pure returns (address[] memory array) {
 		array = new address[](3);
 
 		array[0] = x0;
@@ -210,7 +210,7 @@ library ArrayGibber {
 		address x1,
 		address x2,
 		address x3
-	) public pure returns (address[] memory array) {
+	) internal pure returns (address[] memory array) {
 		array = new address[](4);
 		array[0] = x0;
 		array[1] = x1;
@@ -224,7 +224,7 @@ library ArrayGibber {
 		address x2,
 		address x3,
 		address x4
-	) public pure returns (address[] memory array) {
+	) internal pure returns (address[] memory array) {
 		array = new address[](5);
 		array[0] = x0;
 		array[1] = x1;
@@ -240,7 +240,7 @@ library ArrayGibber {
 		address x3,
 		address x4,
 		address x5
-	) public pure returns (address[] memory array) {
+	) internal pure returns (address[] memory array) {
 		array = new address[](6);
 		array[0] = x0;
 		array[1] = x1;
@@ -258,7 +258,7 @@ library ArrayGibber {
 		address x4,
 		address x5,
 		address x6
-	) public pure returns (address[] memory array) {
+	) internal pure returns (address[] memory array) {
 		array = new address[](7);
 		array[0] = x0;
 		array[1] = x1;
@@ -278,7 +278,7 @@ library ArrayGibber {
 		address x5,
 		address x6,
 		address x7
-	) public pure returns (address[] memory array) {
+	) internal pure returns (address[] memory array) {
 		array = new address[](8);
 		array[0] = x0;
 		array[1] = x1;
@@ -300,7 +300,7 @@ library ArrayGibber {
 		address x6,
 		address x7,
 		address x8
-	) public pure returns (address[] memory array) {
+	) internal pure returns (address[] memory array) {
 		array = new address[](9);
 		array[0] = x0;
 		array[1] = x1;
@@ -324,7 +324,7 @@ library ArrayGibber {
 		address x7,
 		address x8,
 		address x9
-	) public pure returns (address[] memory array) {
+	) internal pure returns (address[] memory array) {
 		array = new address[](10);
 		array[0] = x0;
 		array[1] = x1;
@@ -338,13 +338,13 @@ library ArrayGibber {
 		array[9] = x9;
 	}
 
-	function gib(bool x0) public pure returns (bool[] memory array) {
+	function gib(bool x0) internal pure returns (bool[] memory array) {
 		array = new bool[](1);
 
 		array[0] = x0;
 	}
 
-	function gib(bool x0, bool x1) public pure returns (bool[] memory array) {
+	function gib(bool x0, bool x1) internal pure returns (bool[] memory array) {
 		array = new bool[](2);
 
 		array[0] = x0;
@@ -355,7 +355,7 @@ library ArrayGibber {
 		bool x0,
 		bool x1,
 		bool x2
-	) public pure returns (bool[] memory array) {
+	) internal pure returns (bool[] memory array) {
 		array = new bool[](3);
 
 		array[0] = x0;
@@ -368,7 +368,7 @@ library ArrayGibber {
 		bool x1,
 		bool x2,
 		bool x3
-	) public pure returns (bool[] memory array) {
+	) internal pure returns (bool[] memory array) {
 		array = new bool[](4);
 		array[0] = x0;
 		array[1] = x1;
@@ -382,7 +382,7 @@ library ArrayGibber {
 		bool x2,
 		bool x3,
 		bool x4
-	) public pure returns (bool[] memory array) {
+	) internal pure returns (bool[] memory array) {
 		array = new bool[](5);
 		array[0] = x0;
 		array[1] = x1;
@@ -398,7 +398,7 @@ library ArrayGibber {
 		bool x3,
 		bool x4,
 		bool x5
-	) public pure returns (bool[] memory array) {
+	) internal pure returns (bool[] memory array) {
 		array = new bool[](6);
 		array[0] = x0;
 		array[1] = x1;
@@ -416,7 +416,7 @@ library ArrayGibber {
 		bool x4,
 		bool x5,
 		bool x6
-	) public pure returns (bool[] memory array) {
+	) internal pure returns (bool[] memory array) {
 		array = new bool[](7);
 		array[0] = x0;
 		array[1] = x1;
@@ -436,7 +436,7 @@ library ArrayGibber {
 		bool x5,
 		bool x6,
 		bool x7
-	) public pure returns (bool[] memory array) {
+	) internal pure returns (bool[] memory array) {
 		array = new bool[](8);
 		array[0] = x0;
 		array[1] = x1;
@@ -458,7 +458,7 @@ library ArrayGibber {
 		bool x6,
 		bool x7,
 		bool x8
-	) public pure returns (bool[] memory array) {
+	) internal pure returns (bool[] memory array) {
 		array = new bool[](9);
 		array[0] = x0;
 		array[1] = x1;
@@ -482,7 +482,7 @@ library ArrayGibber {
 		bool x7,
 		bool x8,
 		bool x9
-	) public pure returns (bool[] memory array) {
+	) internal pure returns (bool[] memory array) {
 		array = new bool[](10);
 		array[0] = x0;
 		array[1] = x1;
