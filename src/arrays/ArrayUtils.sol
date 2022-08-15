@@ -6,7 +6,7 @@ pragma solidity >=0.8.0;
 /// @author Kryptoklob (https://github.com/kryptoklob/mate/blob/main/src/arrays/ArrayUtils.sol)
 library ArrayUtils {
 	// Push(), but for dynamic memory arrays. Not very gas efficient.
-	function push(uint256[] memory self, uint256 newValue) public pure returns (uint256[] memory array) {
+	function push(uint256[] memory self, uint256 newValue) internal pure returns (uint256[] memory array) {
 		array = new uint256[](self.length + 1);
 
 		for (uint256 i = 0; i < self.length; i++) {
@@ -19,7 +19,7 @@ library ArrayUtils {
 	}
 
 	// Push(), but for dynamic memory arrays. Not very gas efficient.
-	function push(address[] memory self, address newValue) public pure returns (address[] memory array) {
+	function push(address[] memory self, address newValue) internal pure returns (address[] memory array) {
 		array = new address[](self.length + 1);
 
 		for (uint256 i = 0; i < self.length; i++) {
@@ -32,7 +32,7 @@ library ArrayUtils {
 	}
 
 	// Pop(), but for dynamic memory arrays. Not very gas efficient.
-	function pop(uint256[] memory self) public pure returns (uint256[] memory array, uint256 popped) {
+	function pop(uint256[] memory self) internal pure returns (uint256[] memory array, uint256 popped) {
 		array = new uint256[](self.length - 1);
 
 		for (uint256 i = 0; i < self.length - 1; i++) {
@@ -43,7 +43,7 @@ library ArrayUtils {
 	}
 
 	// Pop(), but for dynamic memory arrays. Not very gas efficient.
-	function pop(address[] memory self) public pure returns (address[] memory array, address popped) {
+	function pop(address[] memory self) internal pure returns (address[] memory array, address popped) {
 		array = new address[](self.length - 1);
 
 		for (uint256 i = 0; i < self.length - 1; i++) {
@@ -54,7 +54,7 @@ library ArrayUtils {
 	}
 
 	// Returns an array of the supplied uint with the supplied length
-	function expand(uint256 toRepeat, uint256 totalLength) public pure returns (uint256[] memory array) {
+	function expand(uint256 toRepeat, uint256 totalLength) internal pure returns (uint256[] memory array) {
 		array = new uint256[](totalLength);
 
 		if (toRepeat == 0) return array;
@@ -67,7 +67,7 @@ library ArrayUtils {
 	}
 
 	// Returns an array of the supplied address with the supplied length
-	function expand(address toRepeat, uint256 totalLength) public pure returns (address[] memory array) {
+	function expand(address toRepeat, uint256 totalLength) internal pure returns (address[] memory array) {
 		array = new address[](totalLength);
 
 		if (toRepeat == address(0)) return array;
@@ -80,7 +80,7 @@ library ArrayUtils {
 	}
 
 	// Returns an array of the supplied bool with the supplied length
-	function expand(bool toRepeat, uint256 totalLength) public pure returns (bool[] memory array) {
+	function expand(bool toRepeat, uint256 totalLength) internal pure returns (bool[] memory array) {
 		array = new bool[](totalLength);
 
 		if (toRepeat == false) return array;
