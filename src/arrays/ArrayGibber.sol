@@ -10,8 +10,8 @@ library ArrayGibber {
         return emptyArray;
     }
 
-    function gibEmpty2D() internal pure returns (address[][] memory) {
-        address[][] memory emptyArray = new address[][](0);
+    function gibEmptyTuples() internal pure returns (address[2][] memory) {
+        address[2][] memory emptyArray = new address[2][](0);
         return emptyArray;
     }
 
@@ -69,7 +69,7 @@ library ArrayGibber {
 		array[3] = x3;
 		array[4] = x4;
 	}
-	
+
 	function gib(
 		uint256 x0,
 		uint256 x1,
