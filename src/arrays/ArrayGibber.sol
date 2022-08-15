@@ -10,7 +10,7 @@ library ArrayGibber {
         return emptyArray;
     }
 
-    function gibEmpty2D(uint256 ) internal pure returns (address[][] memory) {
+    function gibEmpty2D() internal pure returns (address[][] memory) {
         address[][] memory emptyArray = new address[][](0);
         return emptyArray;
     }
