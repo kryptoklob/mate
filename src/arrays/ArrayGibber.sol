@@ -5,6 +5,16 @@ pragma solidity >=0.8.0;
 /// @dev This can certainly be done in assembly much more efficiently.
 /// @author Kryptoklob (https://github.com/kryptoklob/mate/blob/main/src/arrays/ArrayGibber.sol)
 library ArrayGibber {
+    function gibEmpty() internal pure returns (address[] memory) {
+        address[] memory emptyArray = new address[](0);
+        return emptyArray;
+    }
+
+    function gibEmpty2D(uint256 ) internal pure returns (address[][] memory) {
+        address[][] memory emptyArray = new address[][](0);
+        return emptyArray;
+    }
+
 	function gib(uint256 x0) public pure returns (uint256[] memory array) {
 		array = new uint256[](1);
 
