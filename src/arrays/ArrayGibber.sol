@@ -69,7 +69,7 @@ library ArrayGibber {
 		array[3] = x3;
 		array[4] = x4;
 	}
-`
+	
 	function gib(
 		uint256 x0,
 		uint256 x1,
